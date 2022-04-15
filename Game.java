@@ -31,7 +31,6 @@ public class Game {
                 // Clicked on square
                 if(target.toString().equals("Square")){
                     Square square = (Square) target;
-                    System.out.println("Children - " + square.getChildren());
                     if(square.occupied){
                         Piece newPiece = (Piece) square.getChildren().get(0);
                         // Selecting a new piece
@@ -106,7 +105,6 @@ public class Game {
         currentPiece.setEffect(borderGlow);
         currentPiece.getAllPossibleMoves();
         currentPiece.showAllPossibleMoves(true);
-        System.out.println(currentPiece + " Selected -- " + currentPiece.possibleMoves);
     }
 
     private void deselectPiece(boolean changePlayer){
@@ -127,7 +125,6 @@ public class Game {
         currentPiece.posX = square.x;
         currentPiece.posY = square.y;
         deselectPiece(true);
-        System.out.println("dropped");
     }
 
     private void killPiece(Square square){
@@ -146,7 +143,6 @@ public class Game {
         currentPiece.posX = square.x;
         currentPiece.posY = square.y;
         deselectPiece(true);
-        System.out.println("killed");
     }
 
 
