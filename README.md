@@ -2,6 +2,8 @@
 
 This is a game of Chess, made by me using JavaFX.
 
+Check it out here: https://www.youtube.com/watch?v=T2gazw37jTw
+
 There are 6 themes: Coral, Dusk, Wheat, Marine, Emerald, Sandcastle.
 
 You can change it from Controller class.
